@@ -57,6 +57,7 @@ Retornar los productos donde se incluya el producto agregado
 let addProduct = (product) => {
   if (product.name && product.price && product.quantity && product.colors) {
     product.id = products.length + 1;
+    // products.concat(product);
     products.push(product);
     return products;
   }
@@ -91,7 +92,6 @@ debería devolver 2 objetos, ya que solo 2 productos tienen un valor mayor a 500
 ******************************************************************************/
 // Tu código acá
 let showHigherPrice = (products, price) => {
-	console.log("ACA: ",products)
   return products.filter((p) => p.price > price);
 };
 

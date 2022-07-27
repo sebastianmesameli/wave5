@@ -109,7 +109,7 @@ describe("PUNTO NÚMERO 6", () => {
 	it("Debe poder agregar un producto nuevo al array de productos", () => {
 		let newObj = {
 			name: "Benito",
-			price: 50,
+			price: 100,
 			quantity: 5,
 			colors: ["black", "white"],
 		};
@@ -173,6 +173,6 @@ describe("PUNTO 9", () => {
 		expect(showHigherPrice(products, 500).length).toBe(2);
 		expect(showHigherPrice(products, 1000).length).toBe(1);
 		expect(showHigherPrice(products, 5000).length).toBe(0);
-		expect(showHigherPrice(products, 50).length).toBe(4);
+		expect(showHigherPrice(products, 50).length).toBe(5);
 	});
 });
