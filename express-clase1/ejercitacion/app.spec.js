@@ -23,7 +23,7 @@ describe("PRIMER GET", () => {
 	});
 });
 
-xdescribe("EXTRA", () => {
+describe("EXTRA", () => {
 	it("Debe crear un array de 3 productos y guardarlo en una variable llamada 'products'", async () => {
 		expect(products.length).toBe(3);
 	});
