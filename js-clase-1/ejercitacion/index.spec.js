@@ -20,7 +20,7 @@ describe("Fundamentos js", () => {
 			expect(calculatePrice("smart", 999)).not.toMatch(/700/);
 		});
 	});
-	xdescribe("El precio total debe ser la suma del precio del producto + el costo de envío", () => {
+	describe("El precio total debe ser la suma del precio del producto + el costo de envío", () => {
 		it("Los productos con precio menor a 2000 deben sumar 300 de envío al precio final", () => {
 			expect(calculatePrice("PSP", 1500)).toMatch(/1800/);
 			expect(calculatePrice("PSP", 700)).toMatch(/1000/);
@@ -39,7 +39,7 @@ describe("Fundamentos js", () => {
 	});
 	
 	
-	xdescribe("Extra", () => {
+	describe("Extra", () => {
 		it('Si el precio es 0 o un numero negativo, debe retornar el string "Error" ', () => {
 			expect(calculatePrice("switch", -5)).toMatch(/Error/i);
 			expect(calculatePrice("switch", 0)).toMatch(/Error/i);

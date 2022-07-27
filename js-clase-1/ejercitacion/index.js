@@ -11,10 +11,22 @@ calculatePrice("play", 30000)
 output : "el costo de envio de una play es de 500 pesos y el precio total seria de 30500 pesos"
 *******************************************************************************/
 //Tu código acá
-let calculatePrice;
-
-
+const calculatePrice = (product, price) => {
+  let shippingPrice = 0;
+  if (price <= 0) return 'Error';
+  if (!product || !price) return "ingresar ambos parámetros";
+  if (typeof product !== "string") return "ingresar un nombre válido";
+  if (price > 4000) {
+    shippingPrice = 700;
+  } else if (price > 2000) {
+    shippingPrice = 500;
+  } else if (price > 0) {
+    shippingPrice = 300;
+  }
+  const totalPrice = price + shippingPrice;
+  return `el costo de envio de una ${product} es de ${shippingPrice} pesos y el precio total seria de ${totalPrice} pesos`;
+};
 
 module.exports = {
-	calculatePrice,
+  calculatePrice,
 };

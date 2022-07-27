@@ -109,7 +109,7 @@ describe("PUNTO NÚMERO 6", () => {
 	it("Debe poder agregar un producto nuevo al array de productos", () => {
 		let newObj = {
 			name: "Benito",
-			price: 100,
+			price: 50,
 			quantity: 5,
 			colors: ["black", "white"],
 		};
