@@ -1,8 +1,7 @@
 {
 	"dependencies": {
-
 		"express": "^4.18.1",
-
+		"node-mocks-http": "^1.11.0",
 		"nodemon": "^2.0.15",
 		"supertest": "^6.2.2"
 	},
@@ -10,9 +9,8 @@
 		"jest": "^27.5.1"
 	},
 	"scripts": {
-
 		"test": "jest --verbose",
-		"dev": "nodemon app.js"
-
+		"dev": "nodemon app.js",
+		"start": "nodemon app.js"
 	}
 }
